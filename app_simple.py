@@ -255,6 +255,20 @@ def build_context_aware_query(query: str, context: dict) -> str:
     return f"{query} in {last_location}"
 
 
+@st.cache_resource
+def init_system():
+    """Initialize system resources (cached to prevent reloading on reruns)"""
+    config = Config()
+    embeddings_handler = EmbeddingsHandler(
+        model_name=config.EMBEDDING_MODEL,
+        db_path=str(config.VECTORDB_DIR)
+    )
+    translator = LanguageTranslator()
+    answer_generator = AnswerGenerator()
+    conversation_manager = ConversationManager()
+    return embeddings_handler, translator, answer_generator, conversation_manager
+
+
 def build_rag_history(messages: list, n_turns: int = 3) -> str:
     """Return the last *n_turns* Q&A pairs as a plain-text context string."""
     pairs = []
@@ -584,14 +598,12 @@ if 'system_ready' not in st.session_state:
 if 'embeddings_handler' not in st.session_state:
     with st.spinner("🔄 Initializing Solar Advisor System..."):
         try:
-            config = Config()
-            st.session_state.embeddings_handler = EmbeddingsHandler(
-                model_name=config.EMBEDDING_MODEL,
-                db_path=str(config.VECTORDB_DIR)
-            )
-            st.session_state.translator = LanguageTranslator()
-            st.session_state.answer_generator = AnswerGenerator()
-            st.session_state.conversation_manager = ConversationManager()
+            (
+                st.session_state.embeddings_handler,
+                st.session_state.translator,
+                st.session_state.answer_generator,
+                st.session_state.conversation_manager
+            ) = init_system()
             st.session_state.system_ready = True
         except Exception as e:
             st.error(f"Error initializing system: {str(e)}")
