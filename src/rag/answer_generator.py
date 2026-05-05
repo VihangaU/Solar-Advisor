@@ -21,10 +21,15 @@ class AnswerGenerator:
     def __init__(self):
         """Initialize the answer generator with Google Gemini REST API"""
         config = Config()
-        if not config.GOOGLE_API_KEY:
-            raise ValueError("GOOGLE_API_KEY not found in .env file")
-
         self.api_key = config.GOOGLE_API_KEY
+
+        if not self.api_key:
+            raise ValueError(
+                "GOOGLE_API_KEY not found. Please:\n"
+                "- Locally: Add GOOGLE_API_KEY=your_key to .env file\n"
+                "- Streamlit Cloud: Add GOOGLE_API_KEY to Secrets in app settings"
+            )
+
         self.model_name = config.LLM_MODEL  # "gemini-2.0-flash"
         self.temperature = config.LLM_TEMPERATURE
 
