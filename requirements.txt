@@ -22,6 +22,7 @@ openpyxl>=3.1.2
 torch>=2.1.0
 transformers>=4.36.0,<4.50.0
 numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
 safetensors>=0.4.0
 
 # Utilities
@@ -31,9 +32,3 @@ tqdm>=4.66.0
 # Pipeline
 schedule>=1.2.0
 lxml>=4.9.3
-
-# Voice capabilities - NEW
-# SpeechRecognition>=3.10.0
-gTTS>=2.5.0
-# PyAudio>=0.2.14  # For microphone input
-# pydub>=0.25.1  # For audio processing

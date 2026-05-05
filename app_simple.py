@@ -849,27 +849,24 @@ for message in st.session_state.messages:
 
 # Handle voice input - NEW
 if st.session_state.listening:
-    with st.spinner("🎤 Listening... Please speak your question..."):
-        try:
-            detected_lang, recognized_text = st.session_state.voice_handler.listen_from_microphone(
-                timeout=5,
-                phrase_time_limit=10
-            )
-            
+    try:
+        result = st.session_state.voice_handler.create_webrtc_recorder("solar_voice_input")
+
+        if result:
+            detected_lang, recognized_text = result
             if recognized_text:
                 st.success(f"✅ Recognized ({detected_lang}): {recognized_text}")
                 st.session_state.voice_input = recognized_text
                 st.session_state.voice_detected_lang = detected_lang
                 st.session_state.from_voice = True
-            else:
-                st.error("❌ Could not recognize speech. Please try again.")
-        
-        except Exception as e:
-            st.error(f"Error with voice input: {str(e)}")
-        
-        finally:
-            st.session_state.listening = False
-            st.rerun()
+                st.session_state.listening = False
+                st.rerun()
+
+    except Exception as e:
+        st.error(f"Error with voice input: {str(e)}")
+        if st.session_state.show_debug:
+            import traceback
+            st.error(traceback.format_exc())
 
 # Handle sample question
 user_input = None
