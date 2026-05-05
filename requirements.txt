@@ -33,7 +33,7 @@ schedule>=1.2.0
 lxml>=4.9.3
 
 # Voice capabilities - NEW
-SpeechRecognition>=3.10.0
+# SpeechRecognition>=3.10.0
 gTTS>=2.5.0
-PyAudio>=0.2.14  # For microphone input
-pydub>=0.25.1  # For audio processing
+# PyAudio>=0.2.14  # For microphone input
+# pydub>=0.25.1  # For audio processing
