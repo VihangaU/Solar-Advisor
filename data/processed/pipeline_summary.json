@@ -1,0 +1,30 @@
+{
+  "pipeline_completed_at": "2026-05-02T13:27:27.123418",
+  "documents": {
+    "total": 192,
+    "sources": {
+      "pdfs": 153,
+      "websites": 0,
+      "datasets": 14
+    }
+  },
+  "chunks": {
+    "total": 4206,
+    "statistics": {
+      "total_chunks": 4206,
+      "avg_chunk_size": 974,
+      "min_chunk_size": 54,
+      "max_chunk_size": 1099,
+      "total_characters": 4094646
+    }
+  },
+  "embeddings": {
+    "model": "paraphrase-multilingual-MiniLM-L12-v2",
+    "collection_info": {
+      "collection_name": "solar_knowledge",
+      "total_chunks": 4390,
+      "model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "db_path": "C:\\Users\\vihan\\OneDrive\\Desktop\\Projects\\SmartSolarAdvisor_25-26J-527\\Chatbot\\vectordb"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "processed_date": "2026-05-02T13:23:43.704252",
+  "total_files": 14,
+  "files": [
+    "ceb_tariffs_solar_savings.csv",
+    "Plant_1_Generation_Data.csv",
+    "Plant_1_Weather_Sensor_Data.csv",
+    "Plant_2_Generation_Data.csv",
+    "Plant_2_Weather_Sensor_Data.csv",
+    "solar_inverters.csv",
+    "solar_maintanence_guide.csv",
+    "solar_packages.csv",
+    "solar_panels.csv",
+    "solar_benefits.json",
+    "solar_companies.json",
+    "solar_costs.json",
+    "solar_incentives.json",
+    "solar_technical.json"
+  ],
+  "processor": "DatasetProcessor"
+}

@@ -1,0 +1,145 @@
+[
+  {
+    "text": "Solar energy offers several key benefits: 1) Reduces electricity bills by 50-90%, 2) Environmentally friendly with zero emissions, 3) Low maintenance costs, 4) Increases property value, 5) Energy independence from grid outages, 6) Government incentives available in Sri Lanka, 7) Long lifespan of 25+ years.",
+    "chunk_id": "solar_benefits_0",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_benefits.json",
+      "question": "What are the main benefits of solar energy?",
+      "category": "benefits",
+      "language": "english"
+    }
+  },
+  {
+    "text": "In Sri Lanka, homeowners typically save 50-90% on electricity bills. A typical 5kW system can save LKR 5,000-15,000 per month depending on energy consumption and sunlight exposure.",
+    "chunk_id": "solar_benefits_1",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_benefits.json",
+      "question": "How much can I save on electricity bills with solar panels?",
+      "category": "savings",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Yes, solar panels are highly environmentally friendly. They produce zero emissions during operation, reduce carbon footprint significantly, and help combat climate change. A typical residential solar system offsets 3-4 tons of CO2 annually.",
+    "chunk_id": "solar_benefits_2",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_benefits.json",
+      "question": "Are solar panels environmentally friendly?",
+      "category": "environment",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Quality solar panels typically last 25-30 years with minimal degradation. Most manufacturers provide 25-year performance warranties. After 25 years, panels still operate at 80-85% efficiency.",
+    "chunk_id": "solar_benefits_3",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_benefits.json",
+      "question": "What is the lifespan of solar panels?",
+      "category": "durability",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Yes, solar panels work on cloudy days but at reduced efficiency (10-25% of normal output). Sri Lanka's tropical climate ensures good solar generation year-round despite occasional clouds.",
+    "chunk_id": "solar_benefits_4",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_benefits.json",
+      "question": "Do solar panels work on cloudy days?",
+      "category": "performance",
+      "language": "english"
+    }
+  },
+  {
+    "text": "In Sri Lanka, a typical residential solar system costs: 3kW system: LKR 600,000-900,000, 5kW system: LKR 1,000,000-1,500,000, 10kW system: LKR 2,000,000-3,000,000. Prices include panels, inverter, installation, and net metering setup.",
+    "chunk_id": "solar_costs_0",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_costs.json",
+      "question": "How much does a residential solar system cost in Sri Lanka?",
+      "category": "pricing",
+      "language": "english"
+    }
+  },
+  {
+    "text": "The payback period for solar systems in Sri Lanka is typically 5-7 years. With rising electricity costs and available incentives, some systems pay back in as little as 4-5 years.",
+    "chunk_id": "solar_costs_1",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_costs.json",
+      "question": "What is the payback period for solar panels in Sri Lanka?",
+      "category": "roi",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Yes, several banks in Sri Lanka offer solar financing: Bank of Ceylon, Commercial Bank, Sampath Bank provide loans at 8-12% interest. Some solar companies offer in-house financing. Government subsidies may also be available.",
+    "chunk_id": "solar_costs_2",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_costs.json",
+      "question": "Are there financing options for solar panels?",
+      "category": "financing",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Solar panels require minimal maintenance. Annual costs: Panel cleaning: LKR 5,000-10,000/year, Inverter replacement (after 10-15 years): LKR 100,000-200,000. Overall maintenance is very low compared to savings.",
+    "chunk_id": "solar_costs_3",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_costs.json",
+      "question": "What maintenance costs should I expect?",
+      "category": "maintenance",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Monocrystalline panels: 18-22% efficiency, black appearance, more expensive, better for limited space. Polycrystalline panels: 15-17% efficiency, blue appearance, more affordable, good for larger roofs. Both last 25+ years.",
+    "chunk_id": "solar_technical_0",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_technical.json",
+      "question": "What is the difference between monocrystalline and polycrystalline panels?",
+      "category": "panel_types",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Net metering allows you to sell excess solar energy back to CEB. Your meter runs backward when exporting power. You get credits at the same rate you buy electricity. This maximizes savings and ROI in Sri Lanka.",
+    "chunk_id": "solar_technical_1",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_technical.json",
+      "question": "What is net metering?",
+      "category": "net_metering",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Calculate based on monthly consumption: 200-300 units/month: 3kW system, 300-500 units/month: 5kW system, 500-800 units/month: 7-10kW system. A solar expert can design the optimal size for your needs.",
+    "chunk_id": "solar_technical_2",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_technical.json",
+      "question": "What size solar system do I need for my home?",
+      "category": "sizing",
+      "language": "english"
+    }
+  },
+  {
+    "text": "Batteries are optional for grid-tied systems. On-grid with net metering: Batteries not required, saves costs. Off-grid systems: Batteries essential. Hybrid systems: Batteries provide backup power during outages. Battery costs add LKR 200,000-500,000.",
+    "chunk_id": "solar_technical_3",
+    "metadata": {
+      "source_type": "dataset",
+      "filename": "solar_technical.json",
+      "question": "Do I need batteries with my solar system?",
+      "category": "batteries",
+      "language": "english"
+    }
+  }
+]

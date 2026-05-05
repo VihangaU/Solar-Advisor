@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-05-02T13:27:27.117371",
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "total_chunks": 4206,
+  "collection_info": {
+    "collection_name": "solar_knowledge",
+    "total_chunks": 4390,
+    "model": "paraphrase-multilingual-MiniLM-L12-v2",
+    "db_path": "C:\\Users\\vihan\\OneDrive\\Desktop\\Projects\\SmartSolarAdvisor_25-26J-527\\Chatbot\\vectordb"
+  }
+}

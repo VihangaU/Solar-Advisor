@@ -1,0 +1,28 @@
+{
+  "collection_date": "2026-05-05T14:36:20.565894",
+  "total_sources": 3,
+  "categories": [
+    "ceb_knowledge",
+    "pucsl",
+    "sea",
+    "iesl",
+    "solar_companies"
+  ],
+  "sources": [
+    {
+      "url": "https://www.energy.gov.lk/",
+      "title": "Home | Sri Lanka Sustainable Energy Authority",
+      "category": "sea"
+    },
+    {
+      "url": "https://hayleyssolar.com/",
+      "title": "Solar Panels & Solar Power Systems | Hayleys Solar",
+      "category": "solar_companies"
+    },
+    {
+      "url": "https://hayleyssolar.com/about/",
+      "title": "About Hayleys Solar | Solar Companies in Sri Lanka",
+      "category": "solar_companies"
+    }
+  ]
+}

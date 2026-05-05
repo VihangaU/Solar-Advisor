@@ -32,12 +32,12 @@ venv.bak/
 .env.local
 
 # Vector Database
-vectordb/
+# vectordb/  # Commented out to commit processed data
 *.db
 *.sqlite
 
 # Processed data
-data/processed/
+# data/processed/  # Commented out to commit processed data
 
 # IDE
 .vscode/
@@ -68,5 +68,6 @@ Thumbs.db
 .coverage
 htmlcov/
 
+data/pdfs/
 data/websites/
-data/
+data/datasets/
