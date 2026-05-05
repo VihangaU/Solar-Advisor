@@ -3,8 +3,13 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
+# Load environment variables with explicit path
+BASE_DIR = Path(__file__).parent
+ENV_FILE = BASE_DIR / ".env"
+if ENV_FILE.exists():
+    load_dotenv(ENV_FILE)
+else:
+    load_dotenv()
 
 class Config:
     """Main configuration class"""
@@ -38,6 +43,15 @@ class Config:
     
     # LLM Configuration - Google Gemini (Free tier)
     GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
+
+    # Try Streamlit secrets if .env key not found
+    if not GOOGLE_API_KEY:
+        try:
+            import streamlit as st
+            GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", "")
+        except:
+            pass
+
     LLM_MODEL = "gemini-2.5-flash"
     LLM_TEMPERATURE = 0.5  # Lower for more focused, factual responses
     
